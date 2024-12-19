@@ -84,6 +84,7 @@ public class BaseClass {
 
 	public String captureScreen(String name) throws IOException{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		// hellow world
 		
 		TakesScreenshot takeScreenshot=(TakesScreenshot) driver;
 		File sourcefile = takeScreenshot.getScreenshotAs(OutputType.FILE);
