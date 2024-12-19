@@ -1,0 +1,38 @@
+package day47;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+
+// using with pafeFactory approach 
+public class LogInPage2 {
+	
+	WebDriver driver;
+	//Constructor
+	
+	LogInPage2(WebDriver driver){
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	//Locators
+
+	 By txt_username_loc = By.xpath("//input[@placeholder='Username']");
+	 By txt_Password_loc = By.xpath("//input[@placeholder='Password']");
+	 By btn_login_loc = By.xpath("//button[@type='submit']");
+	
+	
+	//Action methods
+	 public void setUserName(String user) {
+		driver.findElement(txt_username_loc).sendKeys(user);
+	}
+	 public void setPassWord(String pwd) {
+		 driver.findElement(txt_Password_loc).sendKeys(pwd);
+	 }
+	
+	 public void ClickLogin() {
+		 driver.findElement(btn_login_loc).click();
+	 }
+}

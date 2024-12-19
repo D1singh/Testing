@@ -1,0 +1,62 @@
+package Day45;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+public class ParamTest {
+	
+	WebDriver driver;
+	String url ="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+
+	@BeforeClass
+	@Parameters({"browser"})
+	void setup(String br) {
+		switch(br) {
+		case "chrome":driver = new ChromeDriver();
+		break;
+		case "edge":driver=new EdgeDriver();
+		break;
+		case "firefox":driver=new FirefoxDriver();
+		break;
+		default: System.out.println("Invalid Browser");
+		}
+		
+		
+		
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get(url);
+		
+	}
+	
+	@Test(priority=1)
+	void TestLogo() {
+		
+		boolean status = driver.findElement(By.xpath("//img[@alt='company-branding']")).isDisplayed();
+		Assert.assertEquals(status,true);
+		
+	}
+	
+	@Test(priority=2)
+	void TestTitle() {
+		String title= driver.getTitle();
+		Assert.assertEquals(title,"OrangeHRM");
+	}
+	
+	@Test(priority=3)
+	void TestUrl() {
+	Assert.assertEquals(driver.getCurrentUrl(), url);	
+	}
+	
+	@AfterClass
+	void TeadDown() {
+		driver.close();
+	}
+}

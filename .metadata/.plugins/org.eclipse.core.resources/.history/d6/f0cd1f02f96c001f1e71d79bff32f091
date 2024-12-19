@@ -1,0 +1,47 @@
+package Day45;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+public class ParamTest {
+	
+	WebDriver driver;
+	String url ="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+
+	@BeforeClass
+	void setup() {
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get(url);
+		
+	}
+	
+	@Test(priority=1)
+	void TestLogo() {
+		
+		boolean status = driver.findElement(By.xpath("//img[@alt='company-branding']")).isDisplayed();
+		Assert.assertEquals(status,true);
+		
+	}
+	
+	@Test(priority=2)
+	void TestTitle() {
+		String title= driver.getTitle();
+		Assert.assertEquals(title,"OrangeHRM");
+	}
+	
+	@Test(priority=3)
+	void TestUrl() {
+	Assert.assertEquals(driver.getCurrentUrl(), url);	
+	}
+	
+	@AfterClass
+	void TeadDown() {
+		driver.close();
+	}
+}

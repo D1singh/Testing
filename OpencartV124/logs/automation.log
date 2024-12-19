@@ -1,0 +1,32 @@
+00:18:19.796 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+00:18:19.965 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:18:19.968 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+00:18:19.971 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:18:19.994 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+00:18:20.071 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+00:18:20.088 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+00:18:20.091 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+00:18:20.113 [main] DEBUG org.apache.poi.ooxml.POIXMLFactory - using default POIXMLDocumentPart for http://schemas.openxmlformats.org/officeDocument/2006/relationships/printerSettings
+00:18:20.175 [main] INFO  testCases.TC_003_LoginDDT - ******* Starting TC_003_loginTDD Test ******
+00:18:32.619 [main] INFO  testCases.TC_003_LoginDDT - ******* Finsihed TC_003_loginTDD Test ******
+00:18:32.629 [main] INFO  testCases.TC_003_LoginDDT - ******* Starting TC_003_loginTDD Test ******
+00:18:44.348 [main] INFO  testCases.TC_003_LoginDDT - ******* Finsihed TC_003_loginTDD Test ******
+00:18:44.353 [main] INFO  testCases.TC_003_LoginDDT - ******* Starting TC_003_loginTDD Test ******
+00:18:55.908 [main] INFO  testCases.TC_003_LoginDDT - ******* Finsihed TC_003_loginTDD Test ******
+00:18:55.914 [main] INFO  testCases.TC_003_LoginDDT - ******* Starting TC_003_loginTDD Test ******
+00:18:57.978 [main] INFO  testCases.TC_003_LoginDDT - ******* Finsihed TC_003_loginTDD Test ******
+00:18:57.995 [main] INFO  testCases.TC_003_LoginDDT - ******* Starting TC_003_loginTDD Test ******
+00:19:09.296 [main] INFO  testCases.TC_003_LoginDDT - ******* Finsihed TC_003_loginTDD Test ******
+00:29:35.908 [main] INFO  testCases.TC_AccontRegistrationTest - *** Starting TC_AccountRegistrationTest ****
+00:29:36.669 [main] INFO  testCases.TC_AccontRegistrationTest - *** click on MyAccount Link ****
+00:29:37.603 [main] INFO  testCases.TC_AccontRegistrationTest - *** click on Register Link ****
+00:29:37.722 [main] INFO  testCases.TC_AccontRegistrationTest - *** Providing customer Details....... ****
+00:29:39.964 [main] INFO  testCases.TC_AccontRegistrationTest - *** Validating expected message.... ****
+00:29:49.716 [main] INFO  testCases.TC_002_LoginTest - ....Starting TC_002_LoginTest....
+00:35:53.251 [main] INFO  testCases.TC_AccontRegistrationTest - *** Starting TC_AccountRegistrationTest ****
+00:35:53.459 [main] INFO  testCases.TC_AccontRegistrationTest - *** click on MyAccount Link ****
+00:35:55.028 [main] INFO  testCases.TC_AccontRegistrationTest - *** click on Register Link ****
+00:35:55.035 [main] INFO  testCases.TC_AccontRegistrationTest - *** Providing customer Details....... ****
+00:35:56.843 [main] INFO  testCases.TC_AccontRegistrationTest - *** Validating expected message.... ****
+00:36:11.087 [main] INFO  testCases.TC_002_LoginTest - ....Starting TC_002_LoginTest....
+00:37:56.886 [main] INFO  testCases.TC_002_LoginTest - ....Starting TC_002_LoginTest....
